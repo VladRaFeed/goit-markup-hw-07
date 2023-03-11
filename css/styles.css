@@ -452,6 +452,13 @@ img {
 
 /* mobile menu */
 
+.js-menu-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mobile-menu-modal {
   position: fixed;
   top: 0;
