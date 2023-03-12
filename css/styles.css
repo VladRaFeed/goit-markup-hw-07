@@ -585,6 +585,83 @@ img {
   fill: var(--card-buttons-color);
 }
 
+/* 5 section */
+
+.section-partners {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+@media (min-width: 1200px) {
+  .section-partners {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.section-title-top {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  margin-bottom: 72px;
+}
+
+.partners-icons-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px 18px;
+}
+
+@media (min-width: 768px) {
+  .partners-icons-list {
+    gap: 72px 24px;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .partners-icons-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+}
+
+.partners-icons-item {
+  width: 190px;
+}
+
+@media (min-width: 768px) {
+  .partners-icons-item {
+    width: 168px;
+  }
+}
+
+.partners-icons-link {
+  display: flex;
+  padding: 16px 40px;
+  border: 1px solid var(--form-label-color);
+  border-radius: 4px;
+  fill: var(--customers-color);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 768px) {
+  .partners-icons-link {
+    padding: 16px 32px;
+  }
+}
+
+.partners-icons-link:hover,
+.partners-icons-link:focus {
+  border: 1px solid var(--acent-color);
+  fill: var(--acent-color);
+}
+
+/* footer */
+
 /* mobile menu */
 
 .js-menu-container {
@@ -637,9 +714,11 @@ img {
   fill: var(--card-buttons-color);
 }
 
-.mobile-nav {
-  margin-top: 80px;
-  margin-left: 40px;
+.mobile-flex {
+  padding-top: 80px;
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
 }
 
 .mobile-nav-list:nth-child(3) {
@@ -665,22 +744,23 @@ img {
   color: var(--acent-color);
 }
 
-.address-mobile {
-  margin-left: 40px;
-  margin-top: 284px;
-}
-
 .address-mobile-item {
   margin-top: 40px;
 }
 
 .phone-numb {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 27px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--main-color);
+}
+
+@media (min-width: 428px) {
+  .phone-numb {
+    font-size: 36px;
+  }
 }
 
 .mail-address {
@@ -693,10 +773,14 @@ img {
 
 .socials-list-mobile {
   display: flex;
-  gap: 56px;
+  gap: 32px;
   justify-content: center;
-  padding-top: 48px;
-  padding-bottom: 40px;
+}
+
+@media (min-width: 428px) {
+  .socials-list-mobile {
+    gap: 56px;
+  }
 }
 
 /* modal */
